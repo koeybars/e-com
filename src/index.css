@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss"; /*added during installation of tailwindcss by ipek, Import Tailwind base, components, and utilities */
+
+
+/* index.css
+ * This file includes global styles and imports Tailwind CSS for the project.
+ */
+
+
+/* Global styles */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8e7;
+  color: #333;
+}
+
