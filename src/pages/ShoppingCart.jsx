@@ -5,6 +5,7 @@ function ShoppingCart() {
   
     const { cart, removeFromCart } = useCart();
 
+    //empty shopping cart
     if (cart.length === 0) {
         return (
         <div className="flex flex-col items-center justify-center h-[60vh] text-center">
@@ -13,18 +14,21 @@ function ShoppingCart() {
         );
     }
 
+
     return (
         <div className="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-md ">
+        
         <h2 className="text-2xl font-bold mb-6 text-gray-800"> Shopping Cart</h2>
 
-        <ul className="divide-y divide-gray-200">
+        {/* unordered list of every item*/}
+         <ul className="divide-y divide-amber-300"> {/*divider line */}
             {cart.map((item) => (
             <li
                 key={item.id}
                 className="flex items-center justify-between py-4"
             >
                 <div>
-                <p className="text-lg font-medium text-gray-800">{item.name}</p>
+                <p className="text-lg font-medium text-black">{item.title}</p>
                 <p className="text-gray-500">{item.price.toFixed(2)} $</p>
                 </div>
                 <button
@@ -37,6 +41,7 @@ function ShoppingCart() {
             ))}
         </ul>
 
+        {/* sum of the items/products */}
         <div className="border-t border-gray-200 mt-6 pt-4 text-right">
             <h3 className="text-xl font-semibold text-gray-800">
             {" "}
