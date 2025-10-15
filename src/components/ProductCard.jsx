@@ -1,15 +1,8 @@
-import { useState } from "react";
-import { Navigate } from "react-router";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartProvider";
 
-/**
- * ProductCard.jsx - Milestone 2
- * This component is responsible for rendering individual product cards.
- * It receives product data as props and displays the product image, title, price, and an "Add to Cart" button.
- */
 
-function ProductCard({ product, onAddToCart }) {
+function ProductCard({ product }) {
   const navigate = useNavigate();
   const { addToCart } = useCart();
   return (

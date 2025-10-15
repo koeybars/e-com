@@ -5,7 +5,7 @@ import Main from "../components/Main";
 function About() {
 
     return (
-    <div>
+    <div className='text-center'>
         <h1>Under Construction</h1>
         <p>The content you are looking for does not exist.</p>
     </div>

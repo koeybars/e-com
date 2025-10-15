@@ -1,6 +1,5 @@
 import { createContext, useState, useContext } from "react";
 
-// Create a context
 const CartContext = createContext();
 
 // Cart Provider Component
@@ -23,10 +22,9 @@ export function CartProvider({ children }) {
   );
 }
 
-// Custom hook for using cart context
 export function useCart() {
   return useContext(CartContext);
 }
 
-// also provide a default export for compatibility
+
 export default CartProvider;
